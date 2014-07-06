@@ -8,8 +8,9 @@ Fork from bundle-up2 by @fgribreau
 Changes in bundle-up3:
 
 * Fix Express 4
+* Added support for the `<script>` async attribute (with the option `asyncJs: true`)
 
-Changes in bundle-up2:
+Changes in bundle-up2: (Fork from bundle-up by @FGRibreau)
 
 * Fix `BundleUp(app, asset object | path string, options object);`
 * Added `.addJsUrl(url [, namespace])` & `.addCssUrl(url [, namespace])`
@@ -36,6 +37,7 @@ BundleUp(app, assets, {
   bundle:true,
   minifyCss: true,
   minifyJs: true,
+  asyncJs: true,
   complete: console.log.bind(console, "Bundle-up: static files are minified/ready")
 });
 

@@ -24,13 +24,13 @@ class Js extends Bundle
       if file.namespace == namespace
 
         if typeof file.url == "string" # added or .addJsFile
-          js += "<script src='#{file.url}' type='text/javascript'></script>"
+          js += "<script src='#{file.url}' type='text/javascript'" + (if @options.asyncJs == true then " async" else "") + "></script>"
 
         if typeof file.url == "boolean" # added via .addJsUrl
-          js += "<script src='#{file.file}' type='text/javascript'></script>"
+          js += "<script src='#{file.file}' type='text/javascript'" + (if @options.asyncJs == true then " async" else "") + "></script>"
 
         if typeof file.url == "object" # added via .addJsObject
-          js += "<script type='text/javascript'>"
+          js += "<script type='text/javascript'" + (if @options.asyncJs == true then " async" else "") + ">"
 
           if !SET_appended
             SET_appended = true
