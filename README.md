@@ -3,6 +3,9 @@ Bundle up!  [![Build Status](https://secure.travis-ci.org/FGRibreau/bundle-up.pn
 
 Bundle up is a middleware for connect to manage all client-side assets in an organized way.
 
+* NPM: https://www.npmjs.org/package/bundle-up3
+* GitHub: https://github.com/nodecode/bundle-up3
+
 Fork from bundle-up2 by @fgribreau
 ------------------
 Changes in bundle-up3:
