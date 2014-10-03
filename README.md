@@ -37,8 +37,8 @@ var BundleUp = require('bundle-up3')
 
 BundleUp(app, assets, {
   staticRoot: __dirname + '/public/',
-  staticUrlRoot:'/',
-  bundle:true,
+  staticUrlRoot: '/',
+  bundle: true,
   minifyCss: true,
   minifyJs: true,
   asyncJs: true,
