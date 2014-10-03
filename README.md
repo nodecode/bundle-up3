@@ -12,6 +12,7 @@ Changes in bundle-up3:
 
 * Fix Express 4
 * Added support for the `<script>` async attribute (with the option `asyncJs: true`)
+* Resolve issue with incorrect url for remote CSS when using addCssUrl, and bundle option is false. #1 (thanks to @orangeloop)
 
 Changes in bundle-up2: (Fork from bundle-up by @FGRibreau)
 
