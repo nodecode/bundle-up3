@@ -29,7 +29,8 @@ class Css extends Bundle
     style = ''
     for file in @files
       if file.namespace == namespace
-        style += "<link href='#{file.url}' rel='stylesheet' type='text/css'/>"
+        url = if typeof file.url == 'boolean' then file.file else file.url
+        style += "<link href='#{url}' rel='stylesheet' type='text/css'/>"
     return style
 
   _convertFilename: (filename) ->
